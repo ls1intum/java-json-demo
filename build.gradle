@@ -1,0 +1,18 @@
+plugins {
+    id 'java'
+    id 'org.checkerframework' version '0.6.37'
+    id 'application'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.json:json:20231013'
+    checkerFramework 'org.checkerframework:checker:3.42.0'
+}
+
+application {
+    mainClass = 'de.tum.in.ase.Main'
+}
