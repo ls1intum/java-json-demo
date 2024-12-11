@@ -5,14 +5,14 @@ import org.json.JSONObject;
 public class Main {
 
     public static void main(String[] args) {
-        Movie theGodfatherMovie = new Movie("tt0068646", "The Godfather",
-                "The ...", new String[] { "Crime", "Drama" }, 1972, "9.2");
+        Movie hiddenFiguresMovie = new Movie("tt4846340", "Hidden Figures",
+                "Three ...", new String[] { "History", "Drama" }, 2016, "7.8");
 
-        String jsonString = serialize(theGodfatherMovie);
+        String jsonString = serialize(hiddenFiguresMovie);
         System.out.println(jsonString);
 
-        Movie anotherGodfatherMovie = deserialize(jsonString);
-        System.out.println(anotherGodfatherMovie);
+        Movie anotherHiddenFigureMovie = deserialize(jsonString);
+        System.out.println(anotherHiddenFigureMovie);
     }
 
     // Serialize: Movie → JSON String
